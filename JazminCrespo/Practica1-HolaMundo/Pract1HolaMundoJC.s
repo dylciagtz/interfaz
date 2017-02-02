@@ -1,5 +1,5 @@
 # Title: Practica 1 Hola mundo en ensamblador		Filename: Pract1HolaMundoJC.s
-# Author: Pasillas Luis Miguel Angel					Date: Jueves 2 / Feb / 2017
+# Author: Crespo Coronado Jazmin Esmeralda			Date: Jueves 2 / Feb / 2017
 # Description: Hola Mundo en ARM
 # Input: -
 # Output: hello world
