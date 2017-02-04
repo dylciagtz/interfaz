@@ -12,15 +12,13 @@ Santillan Gil Saul Ivan
 
 .global main
 main:
-push {ip, lr}					# @ Pila de la direcci髇 de retorno (RL) de Adem醩 de un registro simulado (ip) a
+push {ip, lr}					# @ Pila de la direcci贸n de retorno (RL) de Adem谩s de un registro simulado (ip) a
 						# @ mantener la pila 8 bytes alineados.
 
 ldr r0, =message				# @ Cargar el argumento
 bl printf					# @ Realizar la llamada. Esto es como 'printf ( "...") "en C.
 mov r0, #0 @ Return 0.				# @ Salir del " Main ". Esto es como 'devolver 0' en C.
-pop {ip, pc}					# @ Pop el IP ficticia para revertir nuestra soluci髇 de alineaci髇, y hacer estallar el original lr
-						# @ valor directamente en la PC - el contador de programa - para volver.
-
+pop {ip, pc}					# @ Pop el IP ficticia para revertir nuestra soluci贸n de alineaci贸n, y hacer estallar el original lr
 message:
 .asciz "Hello, world.\n"			# @ Los datos para las llamadas printf. El ensamblador de GNU ".asciz" directiva
-						# @ a馻de autom醫icamente un car醕ter nulo de terminaci髇.
+						# @ a帽ade autom谩ticamente un car谩cter nulo de terminaci贸n.
