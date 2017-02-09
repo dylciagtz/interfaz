@@ -1,0 +1,25 @@
+# Title: Practica 0 Hola mundo en ARM		Filename: Pract0HolaMundo.s
+# Author: Arturo Luquin								Date: Jueves 9 / Feb / 2017
+# Description: Hola Mundo en ARM
+# Input: -
+# Output: hello world
+
+.text           
+##### Code segment ############################################################ 
+.global _start
+_start:
+    mov r0, #1
+    ldr r1, =message
+    ldr r2, =len
+    mov r7, #4
+    swi 0 #avisando al sistema
+
+    mov r7, #1
+    swi 0 #re avisando al sistema
+####### Data segment ##########################################################
+.data
+message:
+    .asciz "hello world\n" #mensaje
+len = .-message
+
+
