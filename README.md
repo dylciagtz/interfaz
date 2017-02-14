@@ -5,10 +5,10 @@ Assembly language Course
 # Todo trabajo lleva su templete para documentarlo profesionalmente.
 
     /* 
-    Title: Practica 1 - Hola Mundo en Swift         Filename: practica1-HolaMundo.swift
-    Author: Chipres Castellanos Ana Maria           Date: 3 - Feb - 2017
-    Description: HOLA MUNDO en Swift
+    Title: Practica 1 - Hola Mundo en ARM ASSEMBLY         Filename: hello.s
+    Author: Juan Perez                  Date: 3 - Feb - 2017
+    Description: HOLA MUNDO en ARM Assembly
     Input: -
-    Output: HOLA MUNDO
+    Output: HOLA MUNDO to console
 
     */
